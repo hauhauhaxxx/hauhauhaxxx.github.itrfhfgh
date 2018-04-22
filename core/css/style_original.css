@@ -1,0 +1,189 @@
+@import url(https://daneden.github.io/animate.css/animate.min.css);
+/*@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);*/
+@import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+/*
+@font-face {
+    font-family: ArrrMateyBB;
+    font-weight: bold;
+    src: url("4056.ttf") format("opentype");
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    background: #000;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    overflow: hidden; 
+    cursor: crosshair; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pattern {
+    position: fixed;
+    /* z-index: 2; */
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: mediumslateblue;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nickname {
+    font-family: "Indie Flower", cursive;
+    font-size: 150px;
+    font-weight: 600;
+}
+
+.crutches {
+    width: 5%;
+}
+
+.media {
+    font-size: 30px;
+}
+
+.url {
+    color: #fff;
+    margin-right: 70px;
+}
+
+.url:last-child {
+    margin-right: 0;
+}
+
+.url > i {
+    font-size: 60px;
+}
+
+.telegram {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: "Indie Flower", sans-serif;
+}
+
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  
+  background: transparent;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* TRACK */
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12.8px;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #3744b8;
+    border-radius: 50px;
+    border: 0px solid #000101;
+    cursor: crosshair;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2e77ff;
+}
+
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12.8px;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #2e77ff;
+    border-radius: 50px;
+    border: 0px solid #000101;
+    cursor: crosshair; 
+}
+
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 12.8px;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #2e77ff;
+    border-radius: 50px;
+    border: 0px solid #000101;
+    cursor: crosshair; 
+}
+
+
+/* THUMB */
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 25px;
+    border-radius: 50px;
+    background: #fff;
+    margin-top: -3.8px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 25px;
+    border-radius: 50px;
+    background: #fff;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 25px;
+    border-radius: 50px;
+    background: #fff;
+    margin-top: 0px;
+    cursor: pointer;
+}
